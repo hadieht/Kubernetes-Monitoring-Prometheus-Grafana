@@ -58,9 +58,9 @@ Now you can access the dashboards locally using `kubectl port-forward`command, o
   CPU, memory, network I/O.  
   ![Pods usage](https://raw.githubusercontent.com/hadieht/kubernetes-monitoring-prometheus-grafana/main/screenshots/pods.png)
 - Containers usage: CPU, memory, network I/O.  
-  [Docker](https://www.docker.com) and [rkt](https://coreos.com/rkt) containers
+  [Docker](https://www.docker.com) containers
   which runs on cluster nodes but outside Kubernetes are also monitored.  
-  ![Containers usage](https://raw.githubusercontent.com/hadieht/main/screenshots/containers.png)
+  ![Containers usage](https://raw.githubusercontent.com/hadieht/kubernetes-monitoring-prometheus-grafana/main/screenshots/containers.png)
 - [systemd](https://freedesktop.org/wiki/Software/systemd) system services
   usage: CPU, memory.  
   ![systemd usage](https://raw.githubusercontent.com/hadieht/kubernetes-monitoring-prometheus-grafana/main/screenshots/systemd.png)

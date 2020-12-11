@@ -53,17 +53,17 @@ Now you can access the dashboards locally using `kubectl port-forward`command, o
 
 - Total and used cluster resources: CPU, memory, filesystem.  
   And total cluster network I/O pressure.  
-  ![Total and used cluster resources](https://raw.githubusercontent.com/hadieht/main/screenshots/total.png)
+  ![Total and used cluster resources](https://raw.githubusercontent.com/hadieht/kubernetes-monitoring-prometheus-grafana/main/screenshots/total.png)
 - [Kubernetes pods](http://kubernetes.io/docs/user-guide/pods) usage:
   CPU, memory, network I/O.  
-  ![Pods usage](https://raw.githubusercontent.com/hadieht/main/screenshots/pods.png)
+  ![Pods usage](https://raw.githubusercontent.com/hadieht/kubernetes-monitoring-prometheus-grafana/main/screenshots/pods.png)
 - Containers usage: CPU, memory, network I/O.  
   [Docker](https://www.docker.com) and [rkt](https://coreos.com/rkt) containers
   which runs on cluster nodes but outside Kubernetes are also monitored.  
   ![Containers usage](https://raw.githubusercontent.com/hadieht/main/screenshots/containers.png)
 - [systemd](https://freedesktop.org/wiki/Software/systemd) system services
   usage: CPU, memory.  
-  ![systemd usage](https://raw.githubusercontent.com/hadieht/main/screenshots/systemd.png)
+  ![systemd usage](https://raw.githubusercontent.com/hadieht/kubernetes-monitoring-prometheus-grafana/main/screenshots/systemd.png)
 - Showing all above metrics both for all cluster and each node separately.  
-  ![Filtering metrics by nodes](https://raw.githubusercontent.com/hadieht/main/screenshots/by_nodes.png)
+  ![Filtering metrics by nodes](https://raw.githubusercontent.com/hadieht/kubernetes-monitoring-prometheus-grafana/main/screenshots/by_nodes.png)
 

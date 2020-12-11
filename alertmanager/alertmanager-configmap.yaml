@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: alertmanager-config
+  namespace: monitoring
+  labels:
+    app.component: monitoring
+    app.name: alertmanager
+data:
+  alertmanager.yml: |
+    global:
+      resolve_timeout: 1m
+
+    route:
+      group_by: ['alertname']
+      group_interval: 15m
+      group_wait: 30s
+      receiver: email_alert
+      repeat_interval: 30m
+
+    receivers:
+    - name: email_alert
+      email_configs:
+      - to: 'to@gmail.com'
+        from: 'from@gmail.com'
+        smarthost: 'smtp.gmail.com:587'
+        auth_username: 'auth'
+        auth_password: 'password'
+
+
+  # When the first notification was sent, wait 'group_interval' to send a batch
+  # of new alerts that started firing for that group.
+  #group_interval: 5m
+
+  # If an alert has successfully been sent, wait 'repeat_interval' to
+  # resend them.
+  #repeat_interval: 3h 
+

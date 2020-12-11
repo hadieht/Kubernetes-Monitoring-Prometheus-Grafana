@@ -10,7 +10,7 @@
 * preconfigured alerts
 * preconfigured Grafana dashboards
 * easy to setup; usually less than a minute to deploy a complete monitoring solution for Kubernetes
-* support for Kubernetes  v1.7.x and up running in  **AWS**, **GCP** and **Azure**
+* support for Kubernetes  v1.7.x
 
 
 ## Prerequisites

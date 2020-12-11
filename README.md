@@ -11,6 +11,8 @@
 * preconfigured Grafana dashboards
 * easy to setup; usually less than a minute to deploy a complete monitoring solution for Kubernetes
 * support for Kubernetes  v1.7.x
+* email when disaster occurred (with AlertManager)
+* Contain Pre-Defined Dashboard for Grafana for monitoring Kubernetes
 
 
 ## Prerequisites
